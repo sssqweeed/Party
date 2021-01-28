@@ -15,6 +15,7 @@
 		8226CC0B25C2BD1A00BDDD2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8226CC0A25C2BD1A00BDDD2E /* Assets.xcassets */; };
 		8226CC0E25C2BD1A00BDDD2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8226CC0C25C2BD1A00BDDD2E /* LaunchScreen.storyboard */; };
 		8226CC1825C2BD6500BDDD2E /* FriendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8226CC1725C2BD6500BDDD2E /* FriendButton.swift */; };
+		82423A4725C2D66D00E43E35 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82423A4625C2D66D00E43E35 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8226CC0D25C2BD1A00BDDD2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8226CC0F25C2BD1A00BDDD2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8226CC1725C2BD6500BDDD2E /* FriendButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendButton.swift; sourceTree = "<group>"; };
+		82423A4625C2D66D00E43E35 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8226CBFE25C2BD1800BDDD2E /* AppDelegate.swift */,
 				8226CC0025C2BD1800BDDD2E /* SceneDelegate.swift */,
 				8226CC0225C2BD1800BDDD2E /* ViewController.swift */,
+				82423A4625C2D66D00E43E35 /* MainView.swift */,
 				8226CC0425C2BD1800BDDD2E /* Main.storyboard */,
 				8226CC1725C2BD6500BDDD2E /* FriendButton.swift */,
 				8226CC0A25C2BD1A00BDDD2E /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8226CC1825C2BD6500BDDD2E /* FriendButton.swift in Sources */,
+				82423A4725C2D66D00E43E35 /* MainView.swift in Sources */,
 				8226CC0325C2BD1800BDDD2E /* ViewController.swift in Sources */,
 				8226CBFF25C2BD1800BDDD2E /* AppDelegate.swift in Sources */,
 				8226CC0925C2BD1800BDDD2E /* Party.xcdatamodeld in Sources */,

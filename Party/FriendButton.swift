@@ -35,7 +35,7 @@ class FriendButton: UIButton, CAAnimationDelegate {
         let colorChange: UIColor
         if !isSelectedUser {
             transform = CGAffineTransform.identity.scaledBy(x: 1.5, y: 1.5)
-            colorChange = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            colorChange = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
         }
         else {
             transform = CGAffineTransform.identity.scaledBy(x: 1, y: 1)
@@ -56,22 +56,4 @@ class FriendButton: UIButton, CAAnimationDelegate {
         
     }
     
-    
-    
-//    @IBAction func buttonPressed(){
-//        let animation = CABasicAnimation(keyPath: "position")
-//        let randomPoint = CGPoint(x: Int.random(in: 1..<250), y: Int.random(in: 1..<250))
-//        animation.duration = 1
-//        animation.toValue = [randomPoint.x, randomPoint.y]
-//        animation.isRemovedOnCompletion = false
-//        animation.fillMode = .both
-//        animation.delegate = self
-//        layer.add(animation, forKey: nil)
-//    }
-//
-//    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-//        center = CGPoint(x: layer.position.x, y: layer.position.y)
-//        frame = CGRect(x: center.x - 50, y: center.y - 50, width: 100, height: 100)
-//        setTitle("XYI", for: .normal)
-//    }
 }
