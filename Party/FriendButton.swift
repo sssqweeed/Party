@@ -12,7 +12,9 @@ class FriendButton: UIButton, CAAnimationDelegate {
 
     private var isSelectedUser = false
     
-
+    func move(<#parameters#>) -> <#return type#> {
+        <#function body#>
+    }
     
     func setOptions(view: UIView, center: CGPoint) {
         bounds = view.bounds
