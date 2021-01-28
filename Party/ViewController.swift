@@ -6,14 +6,14 @@
 //
 
 import UIKit
-class ViewController: UIViewController {
+@IBDesignable class ViewController: UIViewController {
 
     var friend: FriendButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         friend = FriendButton(type: .custom)
-        friend.setOptions(view: view, center: CGPoint(x: view.center.x, y: view.center.y))
+        friend.setOptions(view: view, center: CGPoint(x: view.center.x, y: 700))
         view.addSubview(friend)
     }
 }

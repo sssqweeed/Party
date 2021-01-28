@@ -6,7 +6,6 @@
 //
 
 import UIKit
-@IBDesignable
 class FriendButton: UIButton, CAAnimationDelegate {
 
 
@@ -25,7 +24,11 @@ class FriendButton: UIButton, CAAnimationDelegate {
         layer.cornerRadius = frame.height / 2
         layer.masksToBounds = true
         backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
-       
+        
+        titleLabel?.numberOfLines = 2
+        setTitle("Feriend\nLOL", for: .normal)
+        
+        
         addTarget(self, action: #selector(animateSelectedUser), for: [.touchDown, .touchDragEnter])
         
     }
@@ -34,7 +37,7 @@ class FriendButton: UIButton, CAAnimationDelegate {
         let transform: CGAffineTransform
         let colorChange: UIColor
         if !isSelectedUser {
-            transform = CGAffineTransform.identity.scaledBy(x: 1.5, y: 1.5)
+            transform = CGAffineTransform.identity.scaledBy(x: 1.1, y: 1.1)
             colorChange = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
         }
         else {
