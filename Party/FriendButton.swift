@@ -6,14 +6,16 @@
 //
 
 import UIKit
-
+@IBDesignable
 class FriendButton: UIButton, CAAnimationDelegate {
 
 
     private var isSelectedUser = false
     
-    func move(<#parameters#>) -> <#return type#> {
-        <#function body#>
+    func move(to point: CGPoint) {
+        UIView.animate(withDuration: 1, animations:{
+            self.center = point
+        })
     }
     
     func setOptions(view: UIView, center: CGPoint) {
@@ -26,16 +28,18 @@ class FriendButton: UIButton, CAAnimationDelegate {
        
         addTarget(self, action: #selector(animateSelectedUser), for: [.touchDown, .touchDragEnter])
         
-        
     }
     
     @IBAction private func animateSelectedUser(sender button: UIButton) {
         let transform: CGAffineTransform
+        let colorChange: UIColor
         if !isSelectedUser {
             transform = CGAffineTransform.identity.scaledBy(x: 1.5, y: 1.5)
+            colorChange = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         }
         else {
             transform = CGAffineTransform.identity.scaledBy(x: 1, y: 1)
+            colorChange = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
         }
         
         isSelectedUser = !isSelectedUser
@@ -47,7 +51,7 @@ class FriendButton: UIButton, CAAnimationDelegate {
                        options: [.curveEaseInOut],
                        animations: {
                         button.transform = transform
-                        button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                        button.backgroundColor = colorChange
             }, completion: nil)
         
     }
