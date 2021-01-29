@@ -26,7 +26,7 @@ class FriendButton: UIButton, CAAnimationDelegate {
         backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
         
         titleLabel?.numberOfLines = 2
-        setTitle("Feriend\nLOL", for: .normal)
+        setTitle("Saasha", for: .normal)
         
         
         addTarget(self, action: #selector(animateSelectedUser), for: [.touchDown, .touchDragEnter])

@@ -6,11 +6,10 @@
 //
 
 import UIKit
-
 @IBDesignable class CustomLabel: UILabel {
 
     override func draw(_ rect: CGRect) {
-        // Drawing code
+        super.draw(rect)
         layer.cornerRadius = 20
         layer.masksToBounds = true
         layer.borderWidth = 5
