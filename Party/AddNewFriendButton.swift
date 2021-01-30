@@ -7,7 +7,7 @@
 
 import UIKit
 @IBDesignable
-class AddNewFreindButton: UIButton {
+class AddNewFriendButton: UIButton {
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)

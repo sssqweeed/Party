@@ -16,36 +16,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsH-yd-2M2" customClass="CustomLabel" customModule="Party" customModuleProvider="target">
-                                <rect key="frame" x="78" y="44" width="259" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsH-yd-2M2" customClass="CustomLabel" customModule="Party" customModuleProvider="target">
+                                <rect key="frame" x="20" y="44" width="101" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPb-C9-pgM" customClass="AddNewFreindButton" customModule="Party" customModuleProvider="target">
-                                <rect key="frame" x="309" y="772" width="80" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPb-C9-pgM" customClass="CustomButton" customModule="Party" customModuleProvider="target">
+                                <rect key="frame" x="334" y="44" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Lmf-gE-3wc"/>
-                                    <constraint firstAttribute="height" constant="80" id="oEO-EW-qML"/>
+                                    <constraint firstAttribute="height" constant="60" id="ITs-OY-3hP"/>
+                                    <constraint firstAttribute="width" constant="60" id="rGr-Hc-Ve0"/>
                                 </constraints>
-                                <state key="normal" title="Add new friend">
+                                <state key="normal" image="testImage">
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
-                                <connections>
-                                    <action selector="addButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="uFX-cZ-TLA"/>
-                                    <action selector="addButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P9d-Tt-zPJ"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.19035837987380441" green="0.33918444995244706" blue="0.50131524469434607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="rPb-C9-pgM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="tTA-gD-tLf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rPb-C9-pgM" secondAttribute="trailing" constant="25" id="x6j-l8-ml3"/>
+                            <constraint firstItem="rPb-C9-pgM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LiO-DA-7Bn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rPb-C9-pgM" secondAttribute="trailing" constant="20" id="Uth-GI-pUj"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fsH-yd-2M2"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="addNewFriendButton" destination="rPb-C9-pgM" id="jwR-vD-HBf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,10 +59,11 @@
     <designables>
         <designable name="fsH-yd-2M2"/>
         <designable name="rPb-C9-pgM">
-            <size key="intrinsicContentSize" width="104" height="30"/>
+            <size key="intrinsicContentSize" width="170" height="170"/>
         </designable>
     </designables>
     <resources>
+        <image name="testImage" width="170" height="170"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

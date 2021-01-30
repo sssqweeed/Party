@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8224D1A725C4043900018F3C /* AddNewFreindButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8224D1A625C4043900018F3C /* AddNewFreindButton.swift */; };
 		8226CBFF25C2BD1800BDDD2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8226CBFE25C2BD1800BDDD2E /* AppDelegate.swift */; };
 		8226CC0125C2BD1800BDDD2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8226CC0025C2BD1800BDDD2E /* SceneDelegate.swift */; };
 		8226CC0325C2BD1800BDDD2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8226CC0225C2BD1800BDDD2E /* ViewController.swift */; };
@@ -17,11 +16,10 @@
 		8226CC0E25C2BD1A00BDDD2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8226CC0C25C2BD1A00BDDD2E /* LaunchScreen.storyboard */; };
 		8226CC1825C2BD6500BDDD2E /* FriendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8226CC1725C2BD6500BDDD2E /* FriendButton.swift */; };
 		82423A4725C2D66D00E43E35 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82423A4625C2D66D00E43E35 /* MainView.swift */; };
-		82423A4B25C30D1A00E43E35 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82423A4A25C30D1A00E43E35 /* CustomLabel.swift */; };
+		82423A4B25C30D1A00E43E35 /* CustomUIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82423A4A25C30D1A00E43E35 /* CustomUIElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8224D1A625C4043900018F3C /* AddNewFreindButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFreindButton.swift; sourceTree = "<group>"; };
 		8226CBFB25C2BD1800BDDD2E /* Party.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Party.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8226CBFE25C2BD1800BDDD2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8226CC0025C2BD1800BDDD2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +31,7 @@
 		8226CC0F25C2BD1A00BDDD2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8226CC1725C2BD6500BDDD2E /* FriendButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendButton.swift; sourceTree = "<group>"; };
 		82423A4625C2D66D00E43E35 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		82423A4A25C30D1A00E43E35 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		82423A4A25C30D1A00E43E35 /* CustomUIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +69,7 @@
 				8226CC0225C2BD1800BDDD2E /* ViewController.swift */,
 				82423A4625C2D66D00E43E35 /* MainView.swift */,
 				8226CC0425C2BD1800BDDD2E /* Main.storyboard */,
-				82423A4A25C30D1A00E43E35 /* CustomLabel.swift */,
-				8224D1A625C4043900018F3C /* AddNewFreindButton.swift */,
+				82423A4A25C30D1A00E43E35 /* CustomUIElements.swift */,
 				8226CC1725C2BD6500BDDD2E /* FriendButton.swift */,
 				8226CC0A25C2BD1A00BDDD2E /* Assets.xcassets */,
 				8226CC0C25C2BD1A00BDDD2E /* LaunchScreen.storyboard */,
@@ -154,9 +151,8 @@
 			files = (
 				8226CC1825C2BD6500BDDD2E /* FriendButton.swift in Sources */,
 				82423A4725C2D66D00E43E35 /* MainView.swift in Sources */,
-				8224D1A725C4043900018F3C /* AddNewFreindButton.swift in Sources */,
 				8226CC0325C2BD1800BDDD2E /* ViewController.swift in Sources */,
-				82423A4B25C30D1A00E43E35 /* CustomLabel.swift in Sources */,
+				82423A4B25C30D1A00E43E35 /* CustomUIElements.swift in Sources */,
 				8226CBFF25C2BD1800BDDD2E /* AppDelegate.swift in Sources */,
 				8226CC0925C2BD1800BDDD2E /* Party.xcdatamodeld in Sources */,
 				8226CC0125C2BD1800BDDD2E /* SceneDelegate.swift in Sources */,
