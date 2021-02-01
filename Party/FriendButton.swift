@@ -11,7 +11,11 @@ class FriendButton: UIButton {
     private var isSelectedUser = false
     private var nameFriend: String = ""
     
-    var money: Double = 0
+    var money: Double = 0 {
+        didSet{
+            setTitle("\(nameFriend)\n\(money)", for: .normal)
+        }
+    }
     
     func move(to point: CGPoint) {
         UIView.animate(withDuration: 1, animations:{
@@ -28,7 +32,7 @@ class FriendButton: UIButton {
         layer.masksToBounds = true
         backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
         contentHorizontalAlignment = .center
-        
+        isEnabled = false
         nameFriend = name
         
         titleLabel?.numberOfLines = 2

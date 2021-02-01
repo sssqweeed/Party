@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -30,9 +31,20 @@
                                     <constraint firstAttribute="height" constant="60" id="ITs-OY-3hP"/>
                                     <constraint firstAttribute="width" constant="60" id="rGr-Hc-Ve0"/>
                                 </constraints>
-                                <state key="normal" image="testImage">
+                                <state key="normal" image="plus">
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="addFriend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6O-iE-lKP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aac-V8-fw0">
+                                <rect key="frame" x="322" y="791" width="72" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="addExpenditure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouQ-qf-bHt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -48,7 +60,8 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="addNewFriendButton" destination="rPb-C9-pgM" id="jwR-vD-HBf"/>
+                        <outlet property="addExpenditureButton" destination="aac-V8-fw0" id="crm-pY-tos"/>
+                        <outlet property="addFriendButton" destination="rPb-C9-pgM" id="jwR-vD-HBf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -63,7 +76,7 @@
         </designable>
     </designables>
     <resources>
-        <image name="testImage" width="170" height="170"/>
+        <image name="plus" width="170" height="170"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
