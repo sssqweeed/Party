@@ -7,7 +7,7 @@
 
 import UIKit
 
-@IBDesignable class MainView: UIView {
+@IBDesignable class MainView: UIButton {
 
     override func draw(_ rect: CGRect) {
         var bottomCircle: CAShapeLayer!

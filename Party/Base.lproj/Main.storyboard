@@ -17,6 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aac-V8-fw0">
+                                <rect key="frame" x="280" y="791" width="114" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="Jji-8e-ksj"/>
+                                    <constraint firstAttribute="height" constant="71" id="ZcP-Kr-6xA"/>
+                                </constraints>
+                                <state key="normal" title="Add enpenditure"/>
+                                <connections>
+                                    <action selector="addExpenditure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouQ-qf-bHt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIc-lI-jZf" customClass="FriendButton" customModule="Party" customModuleProvider="target">
+                                <rect key="frame" x="165.5" y="784" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="83" id="Hib-9J-ZgF"/>
+                                    <constraint firstAttribute="height" constant="83" id="pZM-3y-ssS"/>
+                                </constraints>
+                                <state key="normal" title="Me"/>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsH-yd-2M2" customClass="CustomLabel" customModule="Party" customModuleProvider="target">
                                 <rect key="frame" x="20" y="44" width="101" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -27,31 +46,41 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPb-C9-pgM" customClass="CustomButton" customModule="Party" customModuleProvider="target">
                                 <rect key="frame" x="334" y="44" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="ITs-OY-3hP"/>
-                                    <constraint firstAttribute="width" constant="60" id="rGr-Hc-Ve0"/>
+                                    <constraint firstAttribute="height" constant="60" id="kf8-w2-NWy"/>
                                 </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="plus">
-                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="addFriend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6O-iE-lKP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aac-V8-fw0">
-                                <rect key="frame" x="322" y="791" width="72" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNb-N7-gSC" customClass="CustomButton" customModule="Party" customModuleProvider="target">
+                                <rect key="frame" x="334" y="148" width="60" height="60"/>
+                                <state key="normal" title="ok"/>
                                 <connections>
-                                    <action selector="addExpenditure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouQ-qf-bHt"/>
+                                    <action selector="confirm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1e-mp-dCj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.19035837987380441" green="0.33918444995244706" blue="0.50131524469434607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.49863162878787881" green="0.22294905292808609" blue="0.21809920093188453" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="rPb-C9-pgM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LiO-DA-7Bn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aac-V8-fw0" secondAttribute="trailing" constant="20" id="0Mb-D9-fcc"/>
+                            <constraint firstItem="pIc-lI-jZf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="5" id="8NR-2n-KKJ"/>
+                            <constraint firstItem="aac-V8-fw0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="C1s-PK-VmB"/>
+                            <constraint firstItem="nNb-N7-gSC" firstAttribute="width" secondItem="rPb-C9-pgM" secondAttribute="width" id="C9r-W1-LEM"/>
+                            <constraint firstItem="aac-V8-fw0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pIc-lI-jZf" secondAttribute="trailing" constant="8" symbolic="YES" id="Ery-02-aBn"/>
+                            <constraint firstItem="nNb-N7-gSC" firstAttribute="top" secondItem="rPb-C9-pgM" secondAttribute="bottom" constant="44" id="HoY-b8-79o"/>
+                            <constraint firstItem="pIc-lI-jZf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IX1-vL-8V8"/>
+                            <constraint firstItem="rPb-C9-pgM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="334" id="J79-wF-avq"/>
+                            <constraint firstItem="rPb-C9-pgM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UEj-6Q-VfA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rPb-C9-pgM" secondAttribute="trailing" constant="20" id="Uth-GI-pUj"/>
+                            <constraint firstItem="nNb-N7-gSC" firstAttribute="centerX" secondItem="rPb-C9-pgM" secondAttribute="centerX" id="kNq-Y0-93Y"/>
+                            <constraint firstItem="nNb-N7-gSC" firstAttribute="height" secondItem="rPb-C9-pgM" secondAttribute="height" id="nc3-zu-qQS"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -62,6 +91,9 @@
                     <connections>
                         <outlet property="addExpenditureButton" destination="aac-V8-fw0" id="crm-pY-tos"/>
                         <outlet property="addFriendButton" destination="rPb-C9-pgM" id="jwR-vD-HBf"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="qcd-5S-D8T"/>
+                        <outlet property="meButton" destination="pIc-lI-jZf" id="PKl-FZ-Jqo"/>
+                        <outlet property="okButton" destination="nNb-N7-gSC" id="x7h-Y4-yo2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -70,7 +102,9 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="fsH-yd-2M2"/>
+        <designable name="nNb-N7-gSC">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
         <designable name="rPb-C9-pgM">
             <size key="intrinsicContentSize" width="170" height="170"/>
         </designable>
@@ -78,9 +112,6 @@
     <resources>
         <image name="plus" width="170" height="170"/>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
